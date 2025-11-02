@@ -12,7 +12,7 @@ function App() {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("https://ai-email-assistant-l0g1.onrender.com", {
+      const response = await axios.post("https://ai-email-assistant-l0g1.onrender.com/api/email/generate", {
         emailContent,
         tone
       });

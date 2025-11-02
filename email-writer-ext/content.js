@@ -92,7 +92,7 @@ function injectButton() {
       button.style.opacity = '0.7';
       button.disabled = true;
 
-      const response = await fetch('http://localhost:8080/api/email/generate', {
+      const response = await fetch(' https://ai-email-assistant-l0g1.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

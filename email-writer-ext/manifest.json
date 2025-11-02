@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "permissions" :["activeTab", "storage","scripting"],
   "host_permissions" : [
-                           "https://ai-email-assistant-l0g1.onrender.com/*",
+                           "https://ai-email-assistant-l0g1.onrender.com/api/email/generate",
                           "*://mail.google.com/*"
 ],
   "action": {

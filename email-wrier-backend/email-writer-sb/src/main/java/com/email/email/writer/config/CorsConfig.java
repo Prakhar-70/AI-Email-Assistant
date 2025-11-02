@@ -15,19 +15,12 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                // ✅ Frontend hosted on Vercel
-                                "https://ai-email-assistant-eta.vercel.app",
-                                // ✅ Chrome Extension (allows any extension origin)
-                                "chrome-extension://nkphoahdhikpdhgaknihibljdkbchiaa",
-                                // ✅ Local dev frontend (optional)
-                                "http://localhost:3000",
-                                // ✅ Gmail domain (for your content script)
-                                "https://mail.google.com"
+                            "https://ai-email-assistant-eta.vercel.app",
+                            "https://mail.google.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
-                        .exposedHeaders("Access-Control-Allow-Origin")
-                        .allowCredentials(true);
+                        .allowCredentials(false);
             }
         };
     }
